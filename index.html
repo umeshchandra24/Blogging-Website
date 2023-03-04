@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Blog</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <span>Blogging Website</span>
+      <button id="create-blog-btn">Create a Blog</button>
+    </header>
+
+    <div id="blog-container"></div>
+
+
+    <div id="create-blog-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="create-blog-form">
+          <label for="title">Create a Blog Post</label>
+          <input
+            placeholder="Enter your Heading"
+            type="text"
+            id="title"
+            name="title"
+          />
+          <!-- <label for="description">Description:</label> -->
+          <textarea
+            placeholder="Enter your Blog Post"
+            id="description"
+            name="description"
+          ></textarea>
+          <button type="submit" class="submit">Publish Post</button>
+          <button class="cancel-post">Cancel Post</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="edit-blog-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="edit-blog-form">
+          <label for="edit-title">Edit A Post</label>
+          <input type="text" id="edit-title" name="edit-title" />
+
+          <textarea id="edit-description" name="edit-description"></textarea>
+          <button type="submit" class="submit">Save Post</button>
+          <button class="delete-post">Delete Post</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
